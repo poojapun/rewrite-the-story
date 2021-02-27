@@ -1,0 +1,53 @@
+<!-- This is the view for the chapter1-A -->
+<html>
+    <head>
+        <title> Little Red Riding Hood </title>
+        <link rel="icon" href="assets/logo.png">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+        <script>
+            function inputController(){
+                 if (input1.value == 'yes'){
+                     parent.location='chapter2-B.html';
+                 }
+                 else{
+                     parent.location='chapter2-A.html';
+                } 
+            }
+        </script>
+
+    </head>
+    <body class="bg-success text-light">
+
+        <div class="container mt-4 text-center flex flex-column justify-content-center">
+            <h1> Wooho! You have got an obedient one here! </h1>
+            <h3> Let's see what happens next! </h3>
+            <hr>
+
+            <p> LR meets a wolf on the way to her grandmother's house. </p>
+
+            <img class="mb-4 mt-2" src='assets/lrh_wolf.png' width="480" height="450">
+
+            <p> The wolf asks where she is going. <b> Should she trust this wolf? </b> </p>
+            <p> Enter 'yes' or 'no' </p>
+
+            <div>
+                <label>Input Answer:</label>
+                <input class="bg-muted" type="text" id='input1'>
+                <button class="btn btn-outline-dark" type="submit" onClick="inputController()"> Submit </button>
+            </div>
+
+        </div>
+
+         <!-- Bootstrap Bundle with Popper -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+         
+    </body>
+</html>
